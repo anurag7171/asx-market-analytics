@@ -1,0 +1,45 @@
+name: Refresh ASX market data
+
+# Re-scrapes the ASX 200, rebuilds the database, re-runs the SQL analysis and
+# regenerates the Excel report on a schedule, then commits the fresh data so the
+# Power BI / Excel sources are always current.
+
+on:
+  schedule:
+    - cron: "0 7 * * 1-5"   # weekdays 07:00 UTC (after ASX close)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-asx
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      - name: Run pipeline (scrape -> DB -> SQL -> Excel)
+        run: python3 scripts/refresh.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ reports/ results/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh ASX market data [skip ci]"
+            git push
+          fi
