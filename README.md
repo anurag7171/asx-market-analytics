@@ -5,6 +5,14 @@ S&P/ASX 200, model it in **SQL**, analyse returns and risk with advanced queries
 and surface the results in **Power BI** and a formatted **Excel** report — refreshed
 automatically by a **CI/CD** pipeline.
 
+## Power BI dashboard
+
+![ASX 200 Market Analytics — Power BI dashboard](docs/dashboard.png)
+
+Built in Power BI Desktop on the scraped data: average 1-year return by sector, market
+cap by sector, a risk-vs-return scatter of all 200 stocks (volatility vs return, coloured
+by sector), and a ranked top-performers table.
+
 ## What's inside
 - **Scraped data** — 200 ASX 200 constituents (Wikipedia) and ~50,000 daily prices
   across 11 GICS sectors (Yahoo Finance), using split/dividend-adjusted closes.
