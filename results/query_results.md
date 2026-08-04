@@ -4,40 +4,40 @@
 
 | sector_name      | companies | avg_1y_return_pct | best_pct | worst_pct |
 | ---------------- | --------- | ----------------- | -------- | --------- |
-| Healthcare       | 16        | 42.44             | 1015.49  | -60.48    |
-| Materials        | 47        | 40.49             | 142.14   | -25.49    |
-| Industrials      | 24        | 20.02             | 135.25   | -51.86    |
-| Energy           | 11        | 17.43             | 51.94    | -18.72    |
-| Financials       | 36        | 4.24              | 58.81    | -38.9     |
-| Utilities        | 7         | 2.27              | 28.93    | -10.06    |
-| Consumer Staples | 7         | 1.18              | 30.31    | -28.87    |
-| Real Estate      | 17        | -3.87             | 18.71    | -53.1     |
+| Healthcare       | 16        | 49.37             | 1111.27  | -59.97    |
+| Materials        | 47        | 43.51             | 154.01   | -22.44    |
+| Industrials      | 24        | 22.04             | 156.27   | -44.83    |
+| Energy           | 11        | 17.71             | 52.22    | -17.83    |
+| Financials       | 36        | 5.92              | 58.81    | -36.69    |
+| Utilities        | 7         | 1.91              | 28.93    | -11.02    |
+| Consumer Staples | 7         | 1.18              | 30.57    | -27.23    |
+| Real Estate      | 17        | -2.57             | 21.31    | -51.77    |
 
 ### Q2. Top 10 performers over the last year (RANK across the index)
 
 | rank | code | company_name           | sector_name            | one_year_return_pct |
 | ---- | ---- | ---------------------- | ---------------------- | ------------------- |
-| 1    | 4DX  | 4DMedical              | Healthcare             | 1015.5              |
-| 2    | PLS  | PLS Group              | Materials              | 142.1               |
-| 3    | EOS  | Electro Optic Systems  | Industrials            | 135.3               |
-| 4    | NWH  | NRW Holdings           | Industrials            | 128.7               |
-| 5    | CDA  | Codan                  | Information Technology | 92.3                |
-| 6    | VAU  | Vault Minerals         | Materials              | 91.9                |
-| 7    | GGP  | Greatland Resources    | Materials              | 91.3                |
-| 8    | MIN  | Mineral Resources      | Materials              | 87.7                |
+| 1    | 4DX  | 4DMedical              | Healthcare             | 1111.3              |
+| 2    | EOS  | Electro Optic Systems  | Industrials            | 156.3               |
+| 3    | PLS  | PLS Group              | Materials              | 154.0               |
+| 4    | NWH  | NRW Holdings           | Industrials            | 130.0               |
+| 5    | GGP  | Greatland Resources    | Materials              | 96.6                |
+| 6    | VAU  | Vault Minerals         | Materials              | 94.3                |
+| 7    | MIN  | Mineral Resources      | Materials              | 93.0                |
+| 8    | CDA  | Codan                  | Information Technology | 92.4                |
 
 ### Q3. Most volatile stocks — annualised volatility from daily returns (LAG + CTE)
 
 | code | trading_days | annual_volatility_pct |
 | ---- | ------------ | --------------------- |
-| 4DX  | 253          | 141.3                 |
-| EOS  | 253          | 109.4                 |
-| DRO  | 253          | 103.3                 |
-| TUA  | 253          | 81.6                  |
-| LTR  | 253          | 81.3                  |
-| OBM  | 253          | 78.4                  |
-| ZIP  | 253          | 78.1                  |
-| CYL  | 253          | 72.4                  |
+| 4DX  | 254          | 141.2                 |
+| EOS  | 254          | 109.5                 |
+| DRO  | 254          | 104.1                 |
+| TUA  | 254          | 81.5                  |
+| LTR  | 254          | 81.3                  |
+| OBM  | 254          | 78.2                  |
+| ZIP  | 254          | 78.1                  |
+| CYL  | 254          | 72.3                  |
 
 ### Q4. Biggest single-day moves using LAG (adjusted, so splits don't show up)
 
@@ -56,27 +56,27 @@
 
 | sector_name            | stocks_above_50d_ma |
 | ---------------------- | ------------------- |
-| Financials             | 31                  |
+| Financials             | 32                  |
+| Materials              | 18                  |
+| Industrials            | 16                  |
 | Real Estate            | 14                  |
-| Industrials            | 14                  |
-| Consumer Discretionary | 14                  |
-| Materials              | 12                  |
 | Healthcare             | 11                  |
+| Consumer Discretionary | 11                  |
 | Consumer Staples       | 7                   |
-| Communication Services | 6                   |
+| Communication Services | 7                   |
 
 ### Q6. 52-week high proximity — how far each stock sits below its yearly peak
 
 | code | company_name       | sector_name            | high_52w | latest_price | pct_below_high |
 | ---- | ------------------ | ---------------------- | -------- | ------------ | -------------- |
-| TUA  | Tuas               | Communication Services | 8.32     | 2.14         | -74.3          |
-| DRO  | Droneshield        | Industrials            | 6.6      | 1.81         | -72.5          |
-| WTC  | Wisetech Global    | Information Technology | 116.31   | 36.74        | -68.4          |
-| LTR  | Liontown Resources | Materials              | 2.64     | 0.99         | -62.5          |
-| COH  | Cochlear           | Healthcare             | 307.7    | 120.74       | -60.8          |
-| XRO  | Xero               | Information Technology | 178.83   | 71.31        | -60.1          |
-| ASB  | Austal             | Industrials            | 8.76     | 3.65         | -58.3          |
-| PXA  | Pexa Group         | Real Estate            | 16.92    | 7.42         | -56.1          |
+| TUA  | Tuas               | Communication Services | 8.32     | 2.19         | -73.7          |
+| DRO  | Droneshield        | Industrials            | 6.6      | 2.08         | -68.5          |
+| WTC  | Wisetech Global    | Information Technology | 116.31   | 37.86        | -67.4          |
+| LTR  | Liontown Resources | Materials              | 2.64     | 1.03         | -61.0          |
+| COH  | Cochlear           | Healthcare             | 307.7    | 122.32       | -60.2          |
+| XRO  | Xero               | Information Technology | 178.83   | 73.8         | -58.7          |
+| ASB  | Austal             | Industrials            | 8.76     | 3.64         | -58.4          |
+| PXA  | Pexa Group         | Real Estate            | 16.92    | 7.63         | -54.9          |
 
 ### Q7. Maximum drawdown per stock — running peak (window MAX) then deepest trough
 
@@ -95,37 +95,37 @@
 
 | sector_name            | avg_daily_turnover_m_a |
 | ---------------------- | ---------------------- |
-| Materials              | 48.71                  |
-| Information Technology | 45.42                  |
-| Financials             | 44.08                  |
-| Energy                 | 40.33                  |
-| Healthcare             | 36.62                  |
-| Consumer Staples       | 33.09                  |
-| Consumer Discretionary | 27.75                  |
-| Communication Services | 26.73                  |
+| Materials              | 48.69                  |
+| Information Technology | 45.4                   |
+| Financials             | 44.1                   |
+| Energy                 | 40.31                  |
+| Healthcare             | 36.59                  |
+| Consumer Staples       | 33.07                  |
+| Consumer Discretionary | 27.74                  |
+| Communication Services | 26.71                  |
 
 ### Q9. Risk-adjusted return by sector — return per unit of volatility
 
-| sector_name            | avg_return_pct | avg_volatility_pct | return_per_unit_risk |
-| ---------------------- | -------------- | ------------------ | -------------------- |
-| Healthcare             | 42.4           | 44.2               | 0.96                 |
-| Materials              | 40.5           | 49.3               | 0.82                 |
-| Industrials            | 20.0           | 36.1               | 0.55                 |
-| Energy                 | 17.4           | 41.6               | 0.42                 |
-| Financials             | 4.2            | 30.3               | 0.14                 |
-| Utilities              | 2.3            | 28.2               | 0.08                 |
-| Consumer Staples       | 1.2            | 28.5               | 0.04                 |
-| Consumer Discretionary | -5.1           | 33.1               | -0.16                |
+| sector_name      | avg_return_pct | avg_volatility_pct | return_per_unit_risk |
+| ---------------- | -------------- | ------------------ | -------------------- |
+| Healthcare       | 49.4           | 44.1               | 1.12                 |
+| Materials        | 43.5           | 49.3               | 0.88                 |
+| Industrials      | 22.0           | 36.2               | 0.61                 |
+| Energy           | 17.7           | 41.6               | 0.43                 |
+| Financials       | 5.9            | 30.3               | 0.2                  |
+| Utilities        | 1.9            | 28.1               | 0.07                 |
+| Consumer Staples | 1.2            | 28.4               | 0.04                 |
+| Real Estate      | -2.6           | 21.5               | -0.12                |
 
 ### Q10. Market-cap leaders and their latest traded price
 
 | code | company_name           | sector_name            | market_cap_b_aud | latest_price |
 | ---- | ---------------------- | ---------------------- | ---------------- | ------------ |
-| CBA  | Commonwealth Bank      | Financials             | 289.2            | 177.9        |
-| BHP  | BHP                    | Materials              | 260.3            | 60.72        |
-| WBC  | Westpac                | Financials             | 136.3            | 38.17        |
-| ANZ  | Australia & New Zealan | Financials             | 110.4            | 37.29        |
-| WES  | Wesfarmers             | Consumer Discretionary | 83.2             | 90.66        |
-| MQG  | Macquarie Group        | Financials             | 78.4             | 255.2        |
-| NAB  | National Australia Ban | Financials             | 69.8             | 41.6         |
-| CSL  | CSL                    | Healthcare             | 67.4             | 124.3        |
+| CBA  | Commonwealth Bank      | Financials             | 289.2            | 180.72       |
+| BHP  | BHP                    | Materials              | 260.3            | 60.52        |
+| WBC  | Westpac                | Financials             | 136.3            | 38.82        |
+| ANZ  | Australia & New Zealan | Financials             | 110.4            | 38.17        |
+| WES  | Wesfarmers             | Consumer Discretionary | 83.2             | 90.99        |
+| MQG  | Macquarie Group        | Financials             | 78.4             | 263.19       |
+| NAB  | National Australia Ban | Financials             | 69.8             | 42.85        |
+| CSL  | CSL                    | Healthcare             | 67.4             | 128.83       |
